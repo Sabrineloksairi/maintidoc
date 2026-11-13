@@ -133,3 +133,139 @@ vérification effectuée.
 - **Corrections apportées** : à compléter
 
 ---
+
+## P06 — Schéma hydraulique station de pompage atelier A
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, le schéma hydraulique de principe de la station de pompage de l'atelier A (POMPE-A-01 en service, POMPE-A-02 en secours, montées en parallèle), 1 page : bâche, crépine CR1, vanne VA1, pressostat PS1 (seuil 0,3 bar → alarme P-04), clapets CA1/CA2, vannes VR1/VR2, manomètre PI1 et capteur PT1 (alarmes P-07 et P-08), avec un tableau des repères.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/schema_hydraulique_pompe_a.pdf` (1 page)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : schéma redessiné : libellé « Vers process » mal affiché
+
+---
+
+## P07 — Vue éclatée pompe HydroFlux HF-200
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, la vue éclatée de l'ensemble palier / hydraulique de la pompe HF-200, 1 page, avec des repères numérotés identiques au tableau 20.1 du manuel (01 à 10), une nomenclature et l'ordre de démontage conseillé.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/vue_eclatee_pompe_a.pdf` (1 page)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : à compléter
+
+---
+
+## P08 — Procédure de remplacement de la garniture mécanique GM-28
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, la procédure PR-POMPE-11 de remplacement de la garniture mécanique GM-28 de la pompe HF-200, 2 pages : déclencheur P-14, consignation obligatoire, pièces et outillage, démontage, schéma de coupe de la garniture avec cote de pose, remontage, remise en service sans marche à sec.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/proc_garniture_pompe_a.pdf` (2 pages)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : étiquette « Arbre » et « Joint torique » illisibles sur la figure → corrigées
+
+---
+
+## P09 — Procédure d'alignement accouplement pompe / moteur
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, la procédure PR-POMPE-04 d'alignement de l'accouplement pompe / moteur, applicable aux trois pompes, avec une figure de principe, un tableau des tolérances (radial, angulaire, pied boiteux) et un mode opératoire numéroté.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/proc_alignement_pompes.pdf` (1 page)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : numérotation de page incorrecte (« 1 / 2 » sur un document d'une page) → corrigée
+
+---
+
+## P10 — Fiche de sécurité consignation des pompes
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, la fiche de sécurité FS-POMPE-01 « Consignation des pompes », 2 pages : les 6 étapes de consignation (préparer, séparer, condamner, signaler, vérifier, dissiper) avec la vérification associée, la déconsignation, et un formulaire de consignation à remplir.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/fiche_securite_consignation_pompes.pdf` (2 pages)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : à compléter
+
+---
+
+## P11 — Fiche de données de sécurité simplifiée huile de palier HydroLub 68
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, une fiche de données de sécurité simplifiée et fictive pour l'huile de palier « HydroLub 68 » (ISO VG 68) utilisée sur les pompes HF-200, en 9 rubriques : identification, dangers, premiers secours, incendie, déversement, stockage, protection, propriétés, élimination. Préciser qu'elle ne remplace pas la FDS réelle d'un fournisseur.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/fiche_securite_huile_palier.pdf` (2 pages)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : à compléter
+
+---
+
+## P12 — Plan de maintenance préventive pompes
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, le plan de maintenance préventive des trois pompes, 2 pages : tableau des périodicités par équipement en renvoyant au document du corpus concerné, règles générales, calendrier type 2026 de POMPE-A-01. Respecter le fait que la HFM-450 a des roulements graissés à vie.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/plan_preventif_pompes.pdf` (2 pages)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : à compléter
+
+---
+
+## P13 — Guide de dépannage pompes centrifuges HF-200
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF, en français, un guide de dépannage des pompes HF-200, 2 pages : un logigramme « pompe bruyante » qui distingue cavitation (voyant orange clignotant, P-06) et température palier (orange fixe, P-12), un tableau symptômes / codes / causes / actions renvoyant aux procédures du corpus, et des points d'attention.
+> Utilise uniquement les identifiants, codes et valeurs du référentiel et renvoie aux autres
+> documents par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/guide_depannage_pompes.pdf` (2 pages)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** : à compléter
+
+---
