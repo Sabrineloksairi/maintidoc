@@ -1,0 +1,15 @@
+%% MaintiDoc – Flux d'ingestion : du document à l'index
+flowchart LR
+    A["corpus/documents<br/>corpus/images"] --> B["Lecture inventaire.csv<br/>(document_id, version,<br/>equipement_id, groupe_acces)"]
+    B --> C{"Format ?"}
+    C -->|pdf_texte| D["PyMuPDF : texte,<br/>tableaux, figures par page"]
+    C -->|pdf_scanne| E["Rendu des pages en image<br/>→ OCR local<br/>(texte + position)"]
+    C -->|image| F["Image conservée telle quelle<br/>(+ OCR si texte visible)"]
+    D & E & F --> G["Découpage en éléments :<br/>passage, tableau, figure, page, photo"]
+    G --> H["Métadonnées attachées<br/>à chaque élément"]
+    H --> I["Embeddings texte BGE-M3"]
+    H --> J["Embeddings image<br/>encodeur type CLIP"]
+    I & J --> K[("Qdrant<br/>vecteurs + métadonnées")]
+    H --> L[("PostgreSQL<br/>registre des éléments<br/>et droits")]
+    A --> M[("MinIO<br/>fichiers originaux")]
+    K -.->|version d'index tracée| N["MLflow"]

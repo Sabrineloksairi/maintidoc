@@ -1,0 +1,74 @@
+%% MaintiDoc – Architecture cible par blocs (livrable 1)
+flowchart TB
+    U["👷 Technicien / Responsable<br/>question + photo"]
+
+    subgraph IHM["1 · Interface web – Streamlit"]
+        UI["Saisie question, envoi photo,<br/>affichage réponse et citations,<br/>écran d'approbation du ticket"]
+    end
+
+    subgraph API["2 · API – FastAPI"]
+        AUTH{{"🔒 CP1 · Authentification<br/>et autorisation (groupe)"}}
+        BUD["Budgets : 6 appels modèle,<br/>3 appels MCP, 60 s"]
+    end
+
+    subgraph ORCH["3 · Orchestration – LangGraph"]
+        AN["Analyse de la demande"]
+        DEC{"Décision :<br/>répondre / clarifier /<br/>historique / ticket"}
+        HUM{{"✋ CP4 · Validation humaine<br/>(interruption du graphe)"}}
+    end
+
+    subgraph RAG["4 · Recherche documentaire – RAG multimodal LangChain"]
+        FILT{{"🔒 CP2 · Filtre par groupes<br/>d'accès AVANT recherche"}}
+        RT["Recherche texte<br/>BGE-M3"]
+        RV["Recherche visuelle<br/>encodeur type CLIP"]
+        RRF["Fusion RRF"]
+        RR["Reranker adapté<br/>(fine-tuné semaine 5)"]
+    end
+
+    subgraph VLM["5 · Modèle vision-langage"]
+        Q["Qwen2.5-VL-7B-Instruct<br/>description photo + rédaction"]
+    end
+
+    subgraph VER["6 · Vérification"]
+        CIT{{"✅ CP3 · Citations existantes<br/>et qui soutiennent l'affirmation"}}
+        PYD["Schéma Pydantic<br/>(statut, réponse, citations,<br/>incertitudes)"]
+    end
+
+    subgraph MCP["7 · Outil externe – MCP"]
+        MC["Client MCP"]
+        MS{{"🔒 CP5 · Serveur MCP maintenance :<br/>contrôle des droits à chaque appel,<br/>jeton d'approbation, idempotence"}}
+        T1["get_equipment_history"]
+        T2["get_open_tickets"]
+        T3["create_ticket"]
+    end
+
+    subgraph STO["8 · Stockage"]
+        QD[("Qdrant<br/>index vectoriel")]
+        PG[("PostgreSQL<br/>métadonnées, accès")]
+        MN[("MinIO<br/>PDF et images")]
+    end
+
+    subgraph ING["0 · Ingestion (hors ligne)"]
+        I1["PyMuPDF + OCR local<br/>découpage, embeddings"]
+    end
+
+    OPS["MLflow (suivi) · Docker Compose (déploiement)"]
+
+    U --> UI --> AUTH --> BUD --> AN
+    AN -->|photo| Q
+    AN -->|requête + groupes| FILT --> RT & RV
+    RT & RV --> RRF --> RR -->|extraits + images| Q
+    DEC -->|si nécessaire| MC
+    Q --> DEC
+    MC --> MS --> T1 & T2
+    HUM -->|approuvé| T3
+    MS --- T3
+    DEC -->|ticket demandé| HUM
+    DEC --> CIT --> PYD --> UI
+    RT & RV -.-> QD
+    FILT -.-> PG
+    Q -.->|images originales| MN
+    I1 --> QD & PG & MN
+
+    classDef ctrl fill:#fde9d9,stroke:#c0392b,stroke-width:2px,color:#000
+    class AUTH,FILT,CIT,HUM,MS ctrl

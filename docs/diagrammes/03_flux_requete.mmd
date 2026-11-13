@@ -1,0 +1,33 @@
+%% MaintiDoc – Flux d'une requête : question + photo → réponse sourcée
+sequenceDiagram
+    autonumber
+    actor T as Technicien
+    participant UI as Interface Streamlit
+    participant API as API FastAPI
+    participant G as LangGraph
+    participant V as VLM Qwen2.5-VL
+    participant R as RAG (Qdrant + reranker)
+    participant M as Serveur MCP
+    T->>UI: « Que signifie ce voyant orange ? » + photo
+    UI->>API: requête + jeton utilisateur
+    Note over API: 🔒 CP1 identité + groupes<br/>(ex. techniciens_pompes)
+    API->>G: demande + groupes autorisés
+    G->>V: décrire la photo, identifier l'équipement
+    V-->>G: « panneau HF-200, voyant V2 orange, afficheur P-12 »
+    G->>R: recherche texte + image filtrée par groupes
+    Note over R: 🔒 CP2 seuls les documents<br/>du groupe sont interrogés
+    R-->>G: manuel_pompe_a p.18 fig 18.2, codes_alarme_pompe_a p.1
+    opt historique utile
+        G->>M: get_equipment_history(POMPE-A-01)
+        Note over M: 🔒 CP5 droits vérifiés par le serveur
+        M-->>G: 2 alarmes P-12 en 2025
+    end
+    G->>V: rédiger la réponse avec extraits + images
+    V-->>G: réponse + citations
+    Note over G: ✅ CP3 chaque citation existe,<br/>a été récupérée et soutient l'affirmation
+    alt photo illisible / sources absentes ou contradictoires
+        G-->>UI: status = needs_clarification + question
+    else preuves suffisantes
+        G-->>UI: status = answered + citations
+    end
+    UI-->>T: réponse sourcée (document, page, figure)

@@ -1,0 +1,33 @@
+%% MaintiDoc – Flux de création de ticket avec validation humaine
+sequenceDiagram
+    autonumber
+    actor T as Technicien
+    participant UI as Interface
+    participant G as LangGraph
+    participant M as Serveur MCP maintenance
+    T->>UI: « Prépare un ticket si nécessaire »
+    UI->>G: demande de ticket
+    G->>M: get_open_tickets(equipment_id)
+    M-->>G: tickets ouverts (ex. TCK-2025-0188)
+    alt ticket identique déjà ouvert
+        G-->>UI: proposer de compléter le ticket existant (pas de doublon)
+    else aucun ticket équivalent
+        G->>G: rédiger le brouillon (titre, description, sources)
+        Note over G: ✋ CP4 interruption du graphe :<br/>aucune création automatique
+        G-->>UI: brouillon exact à approuver
+        UI-->>T: affichage du contenu complet
+        alt technicien modifie le brouillon
+            T->>UI: modification
+            UI->>G: nouveau contenu → nouvelle approbation exigée
+        end
+        T->>UI: ✔ Approuver
+        UI->>G: approval_token = signature(utilisateur, hash du contenu)
+        G->>M: create_ticket(equipment_id, title, description, approval_token)
+        Note over M: 🔒 CP5 vérifie : droits, jeton valide,<br/>contenu identique au contenu approuvé,<br/>clé d'idempotence non déjà utilisée
+        alt contrôle refusé
+            M-->>G: refus (droits / jeton / doublon)
+        else contrôle accepté
+            M-->>G: ticket créé TCK-2026-xxxx
+        end
+        G-->>UI: résultat affiché
+    end
