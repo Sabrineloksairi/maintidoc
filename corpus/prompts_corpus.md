@@ -269,3 +269,68 @@ vérification effectuée.
 - **Corrections apportées** : à compléter
 
 ---
+
+## P14 — Manuel de la pompe HFM-450 (POMPE-C-03)
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> À partir du référentiel (§2.2 et §4.2), génère en PDF le manuel d'utilisation fictif de la pompe
+> multicellulaire HydroFlux HFM-450 (POMPE-C-03), v2.1 (2023-11), 8 pages, un chapitre par page :
+> sécurité et description (figure des 5 étages), caractéristiques, installation, panneau de
+> commande (figure ; préciser qu'il n'a que deux voyants, vert et rouge, et pas de voyant orange),
+> entretien (roulements graissés à vie, aucune vidange), tableau des codes H-01 à H-08, pièces de
+> rechange. Insister sur les différences avec la HF-200 pour éviter les confusions.
+
+- **Production** : `documents/famille_1/manuel_pompe_c.pdf` (8 pages)
+- **Vérification** : à compléter par l'équipe
+- **Corrections apportées** :
+  - Le référentiel v1.0 plaçait les codes H-xx « p.14 » du manuel, alors qu'un manuel de 8 pages a
+    été jugé suffisant → référentiel corrigé (codes en p.7, tableau 7.1).
+
+---
+
+## P15 — Historique des interventions POMPE-A-01
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> Génère en PDF l'extraction fictive de l'historique des interventions de POMPE-A-01 (1 page,
+> extraction du 2025-10-01), en reprenant exactement les 6 lignes du §9.1 du référentiel (date,
+> ticket, code, intervention, intervenant, statut). Ajoute les observations du responsable : deux
+> P-12 en moins de 3 mois, aucun ticket ouvert, et le fait que l'historique à jour se consulte via
+> l'outil MCP. Mentionne que la diffusion est limitée au groupe responsables.
+
+- **Production** : `documents/famille_1/historique_pompe_a_01.pdf` (1 page)
+- **Vérification** : à compléter — comparer ligne à ligne avec le §9.1 du référentiel.
+- **Corrections apportées** : à compléter
+
+---
+
+## P16 — Photographies synthétiques famille pompes
+
+- **Outil** : script Python (Pillow) écrit avec l'aide de Claude (Anthropic) — images dessinées
+  par programme, aucune photo réelle ni image trouvée sur internet
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Texte du prompt** :
+
+> Écris un script Python qui dessine trois « photographies » synthétiques réalistes (fond texturé,
+> légère inclinaison, bruit, JPEG) : (1) le panneau de commande HF-200 avec V1 vert et V2 orange
+> allumés et l'afficheur « P-12 », libellés conformes au §3.1 du référentiel ; (2) la plaque
+> signalétique lisible de POMPE-A-01 (HF-200, n° de série HF2-21-0347, caractéristiques du §2.1) ;
+> (3) la plaque de POMPE-A-02 photographiée floue, sombre et avec un reflet, de sorte que le
+> repère et le numéro de série soient illisibles.
+
+- **Production** : `images/photo_panneau_pompe_a.jpg`, `images/photo_plaque_pompe_a.jpg`,
+  `images/photo_plaque_pompe_floue.jpg`
+- **Vérification** : à compléter
+- **Corrections apportées** :
+  - Libellés des voyants V2 / V3 qui se chevauchaient sur la première version du panneau →
+    police réduite et espacement agrandi.
+
+---

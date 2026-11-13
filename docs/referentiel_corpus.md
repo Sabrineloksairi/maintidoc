@@ -145,7 +145,7 @@ Niveau : **A** = avertissement (la machine continue de tourner), **D** = défaut
 | P-19 | D | rouge | Arrêt d'urgence activé | Bouton AU enfoncé | Identifier la cause avant réarmement |
 | P-20 | D | rouge | Défaut communication automate | Câble bus | Vérifier liaison |
 
-### 4.2 Codes HFM-450 (POMPE-C-03, dans manuel_pompe_c p.14)
+### 4.2 Codes HFM-450 (POMPE-C-03, dans manuel_pompe_c p.7, tableau 7.1)
 
 Préfixe **H-** pour éviter toute confusion avec HF-200 : H-01 surintensité, H-02 thermique moteur,
 H-03 manque d'eau, H-04 surpression (> 16 bar), H-05 température fluide > 120 °C,
