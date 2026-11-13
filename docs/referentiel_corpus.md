@@ -89,7 +89,7 @@ Site fictif : **Usine Atlas Process — Zone industrielle Nord**.
 
 ### 3.1 Panneau HF-200 (pompes A-01 / A-02)
 
-Afficheur 2 caractères + 4 voyants, de gauche à droite :
+Afficheur 4 caractères (ex. « P-12 ») + 4 voyants, de gauche à droite :
 
 | Repère | Couleur | Libellé sérigraphié | Signification |
 |---|---|---|---|

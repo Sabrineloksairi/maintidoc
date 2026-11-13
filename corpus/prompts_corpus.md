@@ -35,3 +35,34 @@ vérification effectuée.
 - **Corrections apportées** : à compléter
 
 ---
+
+## P02 — Manuel d'utilisation de la pompe HF-200
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Objectif** : produire le manuel principal de la famille pompes, conforme au plan de pages
+  du référentiel (§5.1), pour que les citations « page + figure » soient vérifiables.
+- **Texte du prompt** :
+
+> À partir du référentiel commun (docs/referentiel_corpus.md), génère en PDF le manuel
+> d'utilisation et d'entretien fictif de la pompe centrifuge HydroFlux HF-200 (équipements
+> POMPE-A-01 et POMPE-A-02), version v1.2 (2025-03), en français, exactement 20 pages, en
+> respectant le plan de pages du §5.1 : un chapitre par page, avec les figures 4.1, 6.1, 8.1,
+> 11.1 (panneau de commande), 16.1 (bouchons du palier), 18.2 (détail du voyant orange), la
+> courbe 13.1 et les tableaux 5.1, 12.1, 15.1, 19.1 (codes P-01 à P-20) et 20.1. Reprends sans
+> les modifier les caractéristiques (§2.1), les voyants (§3.1) et les codes (§4.1). Le couple de
+> serrage du bouchon de vidange doit être 35 N·m. Ajoute des renvois vers les autres documents
+> du corpus par leur document_id. Indique sur chaque page qu'il s'agit d'un document fictif.
+
+- **Production** : `documents/famille_1/manuel_pompe_a.pdf` (20 pages)
+- **Vérification** : à compléter par l'équipe — contrôler que chaque valeur (débit, pression,
+  seuils 80 °C / 95 °C, couple 35 N·m, huile ISO VG 68 0,4 L) et chaque code correspond au
+  référentiel, et que chaque figure est à la page annoncée.
+- **Corrections apportées** :
+  - Incohérence repérée dans le référentiel v1.0 : il indiquait un afficheur « 2 caractères »
+    alors que les codes (« P-12 ») en comptent 4 → référentiel corrigé en « 4 caractères ».
+  - Étiquettes des figures 4.1 et 16.1 qui se chevauchaient → repositionnées.
+  - (à compléter par l'équipe après relecture)
+
+---
