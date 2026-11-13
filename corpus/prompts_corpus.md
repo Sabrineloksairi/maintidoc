@@ -66,3 +66,70 @@ vérification effectuée.
   - (à compléter par l'équipe après relecture)
 
 ---
+
+## P03 — Fiche des codes d'alarme HF-200
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Objectif** : détailler les 20 codes P-xx (cause probable et action) en complément du
+  tableau 19.1 du manuel.
+- **Texte du prompt** :
+
+> À partir du §4.1 du référentiel, génère en PDF la fiche « Codes d'alarme – Pompe HydroFlux
+> HF-200 » (v2.0, 2025-03) pour POMPE-A-01 et POMPE-A-02 : un tableau des codes P-01 à P-20
+> (code, niveau A/D, voyant, signification, cause probable, action recommandée), sans changer
+> aucune valeur du référentiel. Ajoute une page de remarques qui explique les deux états du
+> voyant orange V2 (fixe = P-12, clignotant = P-06), le risque de confusion avec le voyant jaune
+> V3, et le fait que POMPE-C-03 et les compresseurs utilisent d'autres codes.
+
+- **Production** : `documents/famille_1/codes_alarme_pompe_a.pdf` (2 pages)
+- **Vérification** : à compléter — comparer chaque ligne au §4.1 du référentiel.
+- **Corrections apportées** : à compléter
+
+---
+
+## P04 — Procédure de vidange HF-200, version 1 (obsolète, contradictoire)
+
+- **Outil** : Claude (Anthropic) + script de simulation de scan (`simuler_scan.py`)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Objectif** : créer l'ancienne version d'une procédure qui contredit la version en vigueur,
+  pour tester la gestion des sources contradictoires (semaine 5), et un document scanné pour
+  tester l'OCR.
+- **Texte du prompt** :
+
+> Génère l'ancienne version v1 (2023-06) de la procédure PR-POMPE-07 « Vidange de l'huile du
+> palier » de la pompe HF-200, 4 pages, avec un schéma du palier page 2. Elle doit contenir
+> volontairement deux différences avec la version en vigueur, conformément au §6 du
+> référentiel : couple de serrage du bouchon de vidange de 25 N·m (au lieu de 35 N·m) et
+> aucune étape de consignation électrique. Le reste doit rester techniquement plausible.
+> Convertis ensuite le PDF en document scanné (images seules, sans texte sélectionnable,
+> légère inclinaison et bruit).
+
+- **Production** : `documents/famille_1/proc_vidange_a_v1.pdf` (4 pages, scanné)
+- **Vérification** : à compléter — vérifier que le texte n'est pas sélectionnable dans le PDF et
+  que les deux différences (25 N·m, absence de consignation) sont bien présentes et lisibles.
+- **Corrections apportées** : à compléter
+
+---
+
+## P05 — Procédure de vidange HF-200, version 2 (en vigueur, contradictoire)
+
+- **Outil** : Claude (Anthropic)
+- **Date** : 2026-11-13
+- **Lancé par** : Sabrine
+- **Objectif** : version correcte de la procédure, qui contredit la v1.
+- **Texte du prompt** :
+
+> Génère la version v2 (2025-04) de la procédure PR-POMPE-07 « Vidange de l'huile du palier » de
+> la pompe HF-200, 4 pages, qui remplace la v1. Elle doit : rendre la consignation électrique
+> obligatoire, indiquer un couple de serrage de 35 N·m cohérent avec manuel_pompe_a (p.5 et
+> p.16), signaler explicitement en tête de document les changements par rapport à la v1, et
+> contenir un historique des versions. Reprends le même schéma du palier avec la nouvelle valeur.
+
+- **Production** : `documents/famille_1/proc_vidange_a_v2.pdf` (4 pages)
+- **Vérification** : à compléter
+- **Corrections apportées** : à compléter
+
+---
