@@ -626,7 +626,7 @@ vérification effectuée.
   - Pumping Systems Tip Sheet #3 « Select an Energy-Efficient Centrifugal Pump »,
     DOE/GO-102005-2157, octobre 2005 —
     https://www.energy.gov/sites/prod/files/2014/05/f16/efficient_centrifug_pumps.pdf
-  - Compressed Air Tip Sheet #14 « Inlet Filter Replacement », août 2004 —
+  - Compressed Air Tip Sheet #14, août 2004 (titre annoncé par l'IA : « Inlet Filter Replacement ») —
     https://www.energy.gov/sites/prod/files/2014/05/f16/compressed_air14.pdf
   - Licence : la page « Web Policies » de energy.gov indique que l'information gouvernementale des
     sites du DOE est dans le domaine public et peut être librement copiée et distribuée, avec une
@@ -637,8 +637,13 @@ vérification effectuée.
     Compressed Air Challenge), ce qui rend leur statut de licence moins clair.
   - Plusieurs résultats de recherche renvoyaient vers des copies sur Scribd ou des sites de
     formation : écartés, seule la source officielle energy.gov est retenue.
-- **Vérification par l'équipe** : à compléter — ouvrir chaque URL, vérifier qu'elle fonctionne,
-  que le contenu correspond, compter les pages, et vérifier l'absence de mention de copyright
-  contraire dans le document.
+- **Vérification par l'équipe** (Sabrine, 2026-11-13) : les deux URL fonctionnent et ont été
+  téléchargées depuis energy.gov ; chaque document fait 2 pages ; aucune mention de copyright ou
+  de restriction dans les PDF ; la fiche pompes contient une figure (courbe de performance, p.1) ;
+  la fiche compresseurs ne contient aucune figure ni tableau (logos seulement).
+- **Erreur de l'IA détectée lors de la vérification** : le titre réel de la Tip Sheet #14 est
+  « Effect of Intake Air on Compressor Performance » (DOE/GO-102004-1933). « Inlet Filter
+  Replacement », donné par l'IA, n'est que le titre d'une section de la page 2 → titre corrigé
+  dans l'inventaire.
 
 ---
