@@ -1,0 +1,10 @@
+Procédure PR-POMPE-07 – Vidange huile palier HF-200 – v1 (2023-06) – réf. proc_vidange_a_v1
+Page 3 / 4
+Document fictif – projet pédagogique MaintiDoc
+5. Remplissage
+1. Verser l'huile neuve par l'orifice A jusqu'à mi-hauteur du voyant de niveau (environ 0,4 L).
+2. Revisser le bouchon A à la main.
+3. Redémarrer la pompe et contrôler l'absence de fuite.
+6. Après l'intervention
+Noter la vidange dans le cahier de maintenance de l'atelier. Éliminer l'huile usagée dans le fût prévu
+à cet effet.

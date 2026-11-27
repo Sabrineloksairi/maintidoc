@@ -1,0 +1,23 @@
+AiroTech AP-11 – Notice – éd. 1.0 (2012-05) – réf. manuel_comp_p
+Page 2 / 3
+Document fictif – projet pédagogique MaintiDoc
+1. Caractéristiques
+Caractéristique
+Valeur
+Type
+Piston bi-étagé lubrifié
+Moteur
+7,5 kW – 400 V
+Pression maximale
+10 bar
+Réservoir
+270 L
+Huile
+minérale pour compresseur à piston – 2,5 L
+Vidange
+toutes les 500 h
+Filtre à air
+toutes les 1 000 h
+2. Panneau
+Le panneau ne comporte que deux voyants : vert MARCHE et rouge DÉFAUT THERMIQUE. Il n'y a ni
+écran ni code d'alarme, et pas de voyant orange.

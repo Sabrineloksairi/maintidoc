@@ -1,0 +1,12 @@
+AiroTech AP-11 – Notice – éd. 1.0 (2012-05) – réf. manuel_comp_p
+Page 3 / 3
+Document fictif – projet pédagogique MaintiDoc
+3. Entretien
+1. Chaque jour : purger le réservoir par le robinet inférieur (compresseur à l'arrêt, pression ≤ 1 bar).
+2. Chaque semaine : contrôler le niveau d'huile à la jauge.
+3. Toutes les 500 h : vidange de l'huile minérale (ne jamais utiliser d'huile synthétique pour vis).
+4. Toutes les 1 000 h : remplacer le filtre à air.
+5. Chaque année : contrôle de la soupape de sécurité (tarée à 11 bar).
+4. Défaut thermique
+Le voyant rouge s'allume lorsque le relais thermique du moteur déclenche. Laisser refroidir 30
+minutes, vérifier la ventilation et la tension des courroies avant de réarmer.

@@ -1,0 +1,31 @@
+# MaintiDoc – livrable 2 – versions figées (Python 3.10 à 3.12, CPU)
+# Extraction et OCR
+pymupdf==1.24.14
+pytesseract==0.3.13          # nécessite le binaire Tesseract 5 + langue fra (voir README)
+rapidocr-onnxruntime==1.2.3  # modèles ONNX inclus, aucun téléchargement
+onnxruntime==1.20.1
+pillow==10.4.0
+numpy==1.26.4
+# Embeddings (CPU)
+torch==2.5.1
+transformers==4.46.3
+sentence-transformers==3.3.1
+open_clip_torch==2.29.0      # encodeur texte-image retenu (benchmark)
+torchvision==0.20.1
+# Base vectorielle, métadonnées, fichiers
+qdrant-client==1.12.1
+psycopg[binary]==3.2.3
+minio==7.2.10
+# API et interface
+fastapi==0.115.5
+uvicorn==0.32.1
+python-multipart==0.0.17
+streamlit==1.40.2
+pyarrow==17.0.0             # compatible numpy 1.26 (pyarrow >= 18 exige numpy 2)
+# Utilitaires, tests, évaluation
+pyyaml==6.0.2
+python-dotenv==1.0.1
+pytest==8.3.4
+httpx==0.27.2
+psutil==6.1.0
+rapidfuzz==3.10.1

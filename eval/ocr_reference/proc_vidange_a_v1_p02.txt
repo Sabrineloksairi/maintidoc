@@ -1,0 +1,14 @@
+Procédure PR-POMPE-07 – Vidange huile palier HF-200 – v1 (2023-06) – réf. proc_vidange_a_v1
+Page 2 / 4
+Document fictif – projet pédagogique MaintiDoc
+3. Schéma
+A  Bouchon de remplissage
+B  Bouchon de vidange – serrage 25 N·m
+Bac de récupération (≥ 1 L)
+Schéma 1 – Palier HF-200 : bouchons et bac de récupération
+4. Vidange
+1. Placer le bac sous le bouchon de vidange B.
+2. Dévisser le bouchon de remplissage A pour faciliter l'écoulement.
+3. Dévisser le bouchon de vidange B et laisser couler l'huile 10 minutes.
+4. Nettoyer le bouchon B et remplacer son joint.
+5. Revisser le bouchon B et le serrer au couple de 25 N·m.

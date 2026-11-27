@@ -1,0 +1,47 @@
+{
+  "nb_questions": 20,
+  "nb_questions_pertinence": 18,
+  "nb_questions_acces": 2,
+  "encodeur_texte": "BAAI/bge-m3",
+  "encodeur_image": "openclip-xlmr",
+  "factice": false,
+  "texte": {
+    "recall@5": 0.944,
+    "mrr@10": 0.771,
+    "succes_top5": 17,
+    "acces_respecte": "2/2",
+    "latence_mediane_s": 0.19,
+    "recall@5_par_type": {
+      "ambigu": 0.667,
+      "contradictoire": 1.0,
+      "photo": 1.0,
+      "texte": 1.0
+    }
+  },
+  "texte_images": {
+    "recall@5": 0.944,
+    "mrr@10": 0.664,
+    "succes_top5": 17,
+    "acces_respecte": "2/2",
+    "latence_mediane_s": 0.25,
+    "recall@5_par_type": {
+      "ambigu": 0.667,
+      "contradictoire": 1.0,
+      "photo": 1.0,
+      "texte": 1.0
+    }
+  },
+  "texte_images_rrf_egal": {
+    "recall@5": 0.833,
+    "mrr@10": 0.654,
+    "succes_top5": 15,
+    "acces_respecte": "2/2",
+    "latence_mediane_s": 0.24,
+    "recall@5_par_type": {
+      "ambigu": 0.667,
+      "contradictoire": 1.0,
+      "photo": 0.75,
+      "texte": 0.889
+    }
+  }
+}

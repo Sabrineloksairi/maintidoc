@@ -1,0 +1,10 @@
+source_id,titre,auteur_ou_organisation,type,date_publication,url,themes,consulte_le,verifie_par
+S1,Filtering in Vector Search: When to Use What,Qdrant,documentation,2026,https://qdrant.tech/documentation/search-design/vector-search-filtering/,metadonnees_acces,2026-11-27,Sabrine
+S2,Hybrid and Multi-Stage Queries,Qdrant,documentation,2024,https://qdrant.tech/documentation/search/hybrid-queries/,recherche_hybride,2026-11-27,Sabrine
+S3,How to Tune Hybrid Search in Qdrant,Qdrant,documentation,2026,https://qdrant.tech/documentation/search-tuning/how-to-tune-hybrid-search/,recherche_hybride ; evaluation,2026-11-27,Sabrine
+S4,"BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation","J. Chen, S. Xiao, P. Zhang, K. Luo, D. Lian, Z. Liu",article,2024-02,https://arxiv.org/abs/2402.03216,recherche_hybride,2026-11-27,Sabrine
+S5,ColPali: Efficient Document Retrieval with Vision Language Models,"M. Faysse, H. Sibille, T. Wu, B. Omrani, G. Viaud, C. Hudelot, P. Colombo",article,2024-06,https://arxiv.org/abs/2407.01449,multimodal,2026-11-27,Sabrine
+S6,Introducing Contextual Retrieval,Anthropic,rapport_technique,2024-09,https://www.anthropic.com/news/contextual-retrieval,decoupage ; recherche_hybride,2026-11-27,Sabrine
+S7,Financial Report Chunking for Effective Retrieval Augmented Generation,"A. Jimeno Yepes, Y. You, J. Milczek, S. Laverde, R. Li",article,2024-02,https://arxiv.org/abs/2402.05131,decoupage,2026-11-27,Sabrine
+S8,RAGAS: Automated Evaluation of Retrieval Augmented Generation,"S. Es, J. James, L. Espinosa-Anke, S. Schockaert",article,2023-09,https://arxiv.org/abs/2309.15217,evaluation,2026-11-27,Sabrine
+S9,Reproducible Scaling Laws for Contrastive Language-Image Learning,M. Cherti et al. (LAION),article,2023-06,https://arxiv.org/abs/2212.07143,multimodal,2026-11-27,Sabrine

@@ -1,0 +1,27 @@
+Page 1 / 2
+Document fictif – projet pédagogique MaintiDoc
+Procédure de purge des condensats – Compresseur
+AT-37
+Référence
+PR-COMP-05
+Version
+v1 (2022-02)
+Équipements
+COMP-B-01, COMP-B-02
+Périodicité
+toutes les 8 heures (à chaque prise de poste)
+1. Principe
+Les condensats s'accumulent dans le refroidisseur final. Ils doivent être purgés manuellement
+toutes les 8 heures par le robinet de purge situé sous le refroidisseur.
+Refroidisseur final
+Robinet de purge
+manuel ¼ de tour
+Séparateur
+eau / huile
+Schéma 1 – Purge manuelle des condensats
+2. Mode opératoire
+1. Placer un récipient sous le robinet.
+2. Ouvrir le robinet d'un quart de tour pendant 10 secondes, compresseur en marche.
+3. Refermer le robinet.
+4. Vider le récipient dans le séparateur eau/huile.
+5. Noter la purge sur la feuille de poste.

@@ -224,3 +224,11 @@ __marimo__/
 .env.*
 *.key
 secrets/
+
+# MaintiDoc – données générées et caches
+data/
+tessdata/
+.pytest_cache/
+*.log
+!.env.example
+Claude outputs/

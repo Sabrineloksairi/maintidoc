@@ -1,0 +1,22 @@
+%% MaintiDoc – Chaîne réalisée au livrable 2 (ingestion, indexation, recherche, accès)
+flowchart LR
+    subgraph ING["Ingestion – scripts/ingest.py"]
+        INV["inventaire.csv<br/>(métadonnées)"] --> EX
+        DOC["36 documents<br/>PDF texte · PDF scannés · photos"] --> EX["PyMuPDF : texte, tableaux,<br/>figures (PNG + lien page)"]
+        DOC --> OCR["OCR : Tesseract (scans)<br/>RapidOCR (photos)"]
+        EX --> DEC["Découpage : page → éléments<br/>passages ~900 car. / 150"]
+        OCR --> DEC
+    end
+    DEC --> PG[("PostgreSQL<br/>documents · éléments")]
+    DEC --> MN[("MinIO<br/>figures · pages · photos")]
+    DEC --> ET["BGE-M3<br/>(texte + en-tête contextuel)"] --> QT[("Qdrant<br/>maintidoc_texte")]
+    DEC --> EI["OpenCLIP XLM-R<br/>(figures, photos, pages)"] --> QI[("Qdrant<br/>maintidoc_images")]
+
+    U["Utilisateur + question<br/>(+ photo)"] --> F{{"🔒 filtre groupes_acces<br/>(config/utilisateurs.yaml)"}}
+    F --> R1["texte → Qdrant maintidoc_texte<br/>(BGE-M3)"]
+    F --> R2["texte → Qdrant maintidoc_images<br/>(OpenCLIP)"]
+    F --> R3["photo → Qdrant maintidoc_images<br/>+ identifiants lus (OCR)"]
+    R1 & R2 & R3 --> RRF["Fusion RRF pondérée<br/>(texte 1,0 · images 0,5)"] --> TOP["Top 5 : document, page,<br/>type, extrait/miniature, score"]
+    TOP --> AFF{{"🔒 ouverture image/page<br/>revérifiée → MinIO"}}
+    classDef ctrl fill:#fde9d9,stroke:#c0392b,stroke-width:2px,color:#000
+    class F,AFF ctrl

@@ -1,0 +1,16 @@
+# Utilisateurs fictifs du prototype MaintiDoc (livrable 2).
+# Aucun mot de passe ici : l'authentification réelle (jeton) est prévue en semaine 4.
+# Les groupes correspondent à la colonne groupe_acces de corpus/inventaire.csv.
+utilisateurs:
+  tech_pompes:
+    nom: Yassine Benali (fictif)
+    identifiant_l1: u_tech_p1
+    groupes: [techniciens_pompes]
+  tech_compresseurs:
+    nom: Salma Kettani (fictif)
+    identifiant_l1: u_tech_c1
+    groupes: [techniciens_compresseurs]
+  responsable:
+    nom: Omar Tazi (fictif)
+    identifiant_l1: u_resp1
+    groupes: [responsables]

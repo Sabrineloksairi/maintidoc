@@ -1,0 +1,21 @@
+requete_id,requete,elements_attendus
+V01,panneau de commande d'une pompe avec quatre voyants et un afficheur,manuel_pompe_a p.11 ; photo_panneau_pompe_a
+V02,gros plan sur un voyant orange,manuel_pompe_a p.18 ; photo_panneau_comp_b
+V03,courbe débit en fonction de la hauteur manométrique,manuel_pompe_a p.13 ; guide_public_pompes_en p.1
+V04,palier avec bouchon de remplissage et bouchon de vidange,manuel_pompe_a p.16 ; proc_vidange_a_v2 p.2 ; proc_vidange_a_v1 p.2
+V05,schéma de câblage des bornes du moteur,manuel_pompe_a p.8
+V06,vue éclatée des pièces détachées numérotées,vue_eclatee_pompe_a p.1
+V07,schéma d'un circuit hydraulique avec deux pompes en parallèle,schema_hydraulique_pompe_a p.1
+V08,logigramme de diagnostic avec des flèches,guide_depannage_pompes p.1
+V09,pompe multicellulaire à cinq étages,manuel_pompe_c p.2
+V10,panneau avec seulement un voyant vert et un voyant rouge,manuel_pompe_c p.5
+V11,écran LCD vert d'un compresseur avec un code d'alarme,manuel_comp_b p.10 ; photo_ecran_alarme_comp_b
+V12,cartouche de filtre à air,manuel_comp_b p.15 ; proc_filtre_air_comp_b p.1
+V13,schéma du circuit air et huile d'un compresseur,manuel_comp_b p.8 ; schema_pneumatique_comp_b p.1
+V14,plan d'implantation de deux compresseurs dans un local,manuel_comp_b p.6
+V15,schéma électrique avec contacteurs,schema_electrique_comp_b p.1
+V16,purgeur de condensats relié à un séparateur eau huile,proc_purge_comp_b_v2 p.1 ; proc_purge_comp_b_v1 p.1
+V17,plaque signalétique métallique d'une pompe,photo_plaque_pompe_a ; photo_plaque_pompe_floue
+V18,compresseur à piston avec un réservoir rouge,manuel_comp_p p.1
+V19,vue d'ensemble d'une pompe centrifuge et de son moteur,manuel_pompe_a p.4
+V20,vue d'ensemble d'un compresseur dans son capot,manuel_comp_b p.4

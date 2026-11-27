@@ -1,0 +1,24 @@
+Page 1 / 4
+Document fictif – projet pédagogique MaintiDoc
+Procédure de vidange de l'huile du palier
+Pompe HydroFlux HF-200 – POMPE-A-01 / POMPE-A-02
+Référence
+PR-POMPE-07
+Version
+v1 – juin 2023
+Rédigé par
+Service maintenance – Atelier A
+Durée estimée
+30 min
+Périodicité
+toutes les 4 000 h ou 6 mois
+1. Matériel nécessaire
+• Clé dynamométrique 10–60 N·m
+• Clé plate de 17
+• Bac de récupération d'au moins 1 L
+• 0,4 L d'huile minérale ISO VG 68
+• Joint neuf pour bouchon de vidange
+• Chiffons, gants
+2. Préparation
+Arrêter la pompe au bouton marche/arrêt et attendre 15 minutes que l'huile refroidisse un peu.
+Basculer sur la pompe de secours si nécessaire.
