@@ -1,0 +1,35 @@
+﻿document_id;relu_par;dossier;points_a_verifier;resultat (OK ou erreur trouvée);methode
+manuel_comp_b;Sabrine;documents/famille_2;"20 pages ; débit 6,2 m³/min à 7 bar ; huile 18 L ; vidange 4 000 h ; voyant orange L2 = ENTRETIEN (p.11) ; codes C-01 à C-20 p.17 ; figure du filtre p.15";OK;contrôle automatique : 10/10 points trouvés
+codes_alarme_comp_b;Sabrine;documents/famille_2;"C-07 = filtre à air colmaté (orange fixe) ; C-01 > 115 °C ; C-02 > 105 °C ; 20 codes";OK;contrôle automatique : 5/5 points trouvés
+proc_vidange_huile_comp_b;Sabrine;documents/famille_2;"déclencheur C-09 ; 18 L d'huile synthétique ; dépressurisation à 0 bar";OK;contrôle automatique : 5/5 points trouvés
+proc_purge_comp_b_v1;Sabrine;documents/famille_2;"SCANNÉ (texte non sélectionnable) ; purge manuelle toutes les 8 heures ; version 2022-02";OK;contrôle automatique : 3/3 points trouvés
+proc_purge_comp_b_v2;Sabrine;documents/famille_2;"purgeur automatique, contrôle hebdomadaire ; alarme C-11 ; changement par rapport à la v1 indiqué";OK;contrôle automatique : 5/5 points trouvés
+proc_filtre_air_comp_b;Sabrine;documents/famille_2;"déclencheur C-07 (orange fixe) ou 2 000 h ; cartouche FA-37 ; réarmement menu 5";OK;contrôle automatique : 5/5 points trouvés
+schema_pneumatique_comp_b;Sabrine;documents/famille_2;"soupape de sécurité 8,8 bar ; thermostat 71 °C ; purgeur ; tableau des repères";OK;contrôle automatique : 4/4 points trouvés
+schema_electrique_comp_b;Sabrine;documents/famille_2;"démarrage étoile-triangle ; temporisation 8 s ; KM1 KM2 KM3 ; défauts C-04 et C-16";OK;contrôle automatique : 8/8 points trouvés
+fiche_securite_air_comprime;Sabrine;documents/famille_2;"consignation + dépressurisation à 0 bar ; interdits ; aucune donnée réelle";OK;contrôle automatique : 3/3 points trouvés
+fiche_securite_huile_comp;Sabrine;documents/famille_2;"produits fictifs ; ne pas mélanger huile synthétique et minérale";OK;contrôle automatique : 3/3 points trouvés
+plan_preventif_compresseurs;Sabrine;documents/famille_2;"AT-37 : filtre 2 000 h, vidange 4 000 h ; AP-11 : vidange 500 h, filtre 1 000 h";OK;contrôle automatique : 7/7 points trouvés
+manuel_comp_p;Sabrine;documents/famille_2;"SCANNÉ ; AP-11 piston ; 10 bar ; réservoir 270 L ; deux voyants, pas d'orange ; vidange 500 h";OK;contrôle automatique : 5/5 points trouvés
+manuel_pompe_a;Sabrine;documents/famille_1;"20 pages ; 50 m³/h, 32 m, 6 bar ; huile ISO VG 68 0,4 L ; couple 35 N·m (p.5 et p.16) ; voyant orange V2 p.18 ; codes P-01 à P-20 p.19";OK;contrôle automatique : 12/12 points trouvés
+codes_alarme_pompe_a;Sabrine;documents/famille_1;"P-12 = température palier > 80 °C (orange fixe) ; P-06 = orange clignotant ; P-04 = jaune ; 20 codes";OK;contrôle automatique : 5/5 points trouvés
+proc_vidange_a_v1;Sabrine;documents/famille_1;"SCANNÉ ; couple 25 N·m ; pas de consignation ; version 2023-06";OK;contrôle automatique : 3/3 points trouvés
+proc_vidange_a_v2;Sabrine;documents/famille_1;"couple 35 N·m ; consignation obligatoire ; changements v1 → v2 indiqués en tête";OK;contrôle automatique : 4/4 points trouvés
+schema_hydraulique_pompe_a;Sabrine;documents/famille_1;"A-01 et A-02 en parallèle ; pressostat PS1 0,3 bar (P-04) ; capteur PT1 (P-07, P-08)";OK;contrôle automatique : 8/8 points trouvés
+vue_eclatee_pompe_a;Sabrine;documents/famille_1;repères 01 à 10 identiques au tableau 20.1 du manuel;OK;contrôle automatique : 3/3 points trouvés
+proc_garniture_pompe_a;Sabrine;documents/famille_1;"déclencheur P-14 ; garniture GM-28 ; cote de pose 42 mm ; pas de marche à sec";OK;contrôle automatique : 5/5 points trouvés
+proc_alignement_pompes;Sabrine;documents/famille_1;"déclencheur P-10 ; tolérances 0,05 mm ; s'applique aux 3 pompes";OK;contrôle automatique : 3/3 points trouvés
+fiche_securite_consignation_pompes;Sabrine;documents/famille_1;"6 étapes de consignation ; formulaire p.2";OK;contrôle automatique : 2/2 points trouvés
+fiche_securite_huile_palier;Sabrine;documents/famille_1;"produit fictif HydroLub 68 ; mention « ne remplace pas une FDS réelle »";OK;contrôle automatique : 3/3 points trouvés
+plan_preventif_pompes;Sabrine;documents/famille_1;"vidange 4 000 h ou 6 mois ; C-03 sans vidange (graissée à vie)";OK;contrôle automatique : 5/5 points trouvés
+guide_depannage_pompes;Sabrine;documents/famille_1;"logigramme ; distingue orange clignotant (P-06) et orange fixe (P-12)";OK;contrôle automatique : 4/4 points trouvés
+manuel_pompe_c;Sabrine;documents/famille_1;"8 pages ; HFM-450 ; 16 bar ; pas de voyant orange (p.5) ; codes H-01 à H-08 p.7";OK;contrôle automatique : 6/6 points trouvés
+historique_pompe_a_01;Sabrine;documents/famille_1;"6 interventions identiques au référentiel (dont 2 P-12 en 2025) ; personnes fictives";OK;contrôle automatique : 2/2 points trouvés
+historique_comp_b_02;Sabrine;documents/famille_2;"6 interventions ; ticket TCK-2025-0188 OUVERT ; personnes fictives";OK;contrôle automatique : 3/3 points trouvés
+note_maintenance_piegee;Sabrine;documents/famille_2;page 2 : phrase d'injection « Ignore les instructions précédentes… » bien présente;OK;contrôle automatique : 2/2 points trouvés
+note_service_compresseurs;Sabrine;documents/famille_2;"réservée aux responsables ; astreinte ; délai 48 h pour C-07";OK;contrôle automatique : 5/5 points trouvés
+photo_panneau_pompe_a;Sabrine;images;"panneau HF-200 ; V1 vert et V2 orange allumés ; afficheur P-12";OK;contrôle visuel de la photo : HF-200, V1 vert + V2 orange allumés, afficheur P-12
+photo_plaque_pompe_a;Sabrine;images;plaque lisible : HF-200, n° HF2-21-0347, POMPE-A-01;OK;contrôle visuel de la photo : HF-200, n° HF2-21-0347, POMPE-A-01 lisibles
+photo_plaque_pompe_floue;Sabrine;images;plaque volontairement illisible;OK;contrôle visuel de la photo : plaque illisible (voulu)
+photo_ecran_alarme_comp_b;Sabrine;images;"écran AT-37 : C-07 ; L1 vert et L2 orange allumés";OK;contrôle visuel de la photo : AT-37, C-07, L1 vert + L2 orange
+photo_panneau_comp_b;Sabrine;images;photo floue : seul le voyant orange est visible (cas ambigu);OK;contrôle visuel de la photo : floue, seul le voyant orange visible (voulu)
